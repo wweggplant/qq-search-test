@@ -1,0 +1,52 @@
+/*
+	样式简单, 统一放在一个文件里了
+*/
+.qq-view{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #111;
+	width: 200px;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.user-avatar{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.user-info{
+	margin-left: 5px;
+	width: 125px;
+	overflow: hidden;
+}
+.user-name{
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.user-qq-number{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #8f8c8c;
+}
+
+.search-bar{
+	display: flex;
+}
+.search-bar-input{
+	line-height: 1.5;
+	border: none;
+	border-bottom: 1px solid #111;
+	outline: none;
+	margin-left: 5px;
+}
+
+.error-view{
+	margin-top: 10px;
+	color: red;
+}
+
+.loading{
+	margin-top: 10px;
+}
