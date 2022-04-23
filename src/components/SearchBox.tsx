@@ -11,7 +11,10 @@ interface SearchBoxProps {
 const SearchBox: React.FC<SearchBoxProps> = ({ setErrorMsg, setData, setFetching }) => {
   // 更新列表
   const fetchQQ = debounce(async (qq: string) => {
-    if (!qq) return;
+    if (!qq) {
+      setErrorMsg('');
+      return
+    }
     setFetching(true);
 		try {
 			const { code, msg, ...rest} = await getQQUsers(qq);
